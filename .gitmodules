@@ -1,3 +1,4 @@
 [submodule "libs/hbb_common"]
 	path = libs/hbb_common
-	url = https://github.com/appdevwinperfil/hbb_common_winperfil
+	url = https://github.com/appdevwinperfil/hbb_common_winperfil.git
+	branck = main
