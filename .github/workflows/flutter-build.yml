@@ -372,16 +372,6 @@ jobs:
           rm -rf ./usbmmidd_v2/deviceinstaller.exe ./usbmmidd_v2/usbmmidd.bat
           mv ./usbmmidd_v2 ./Release || true
 
-      - name: Rename main Windows exe
-        if: env.UPLOAD_ARTIFACT == 'true'
-        shell: powershell
-        run: |
-          if (Test-Path .\rustdesk\rustdesk.exe) {
-            Move-Item .\rustdesk\rustdesk.exe .\rustdesk\WinperfilDesk.exe -Force
-          } else {
-            Write-Error "No se encontró .\\rustdesk\\rustdesk.exe"
-          }
-
       - name: find Runner.res
         # Windows: find Runner.res (compiled from ./flutter/windows/runner/Runner.rc), copy to ./Runner.res
         # Runner.rc does not contain actual version, but Runner.res does
