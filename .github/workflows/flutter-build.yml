@@ -789,13 +789,13 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@master
         with:
-          name: rustdesk-unsigned-windows-x86_64
+          name: WinperfilDesk-unsigned-windows-x86_64
           path: ./windows-x86_64/
 
       - name: Download Artifacts
         uses: actions/download-artifact@master
         with:
-          name: rustdesk-unsigned-windows-x86
+          name: WinperfilDesk-unsigned-windows-x86
           path: ./windows-x86/
 
       - name: Combine unsigned app
