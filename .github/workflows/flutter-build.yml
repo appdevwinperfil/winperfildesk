@@ -356,7 +356,7 @@ jobs:
           head -n 100 "${VCPKG_ROOT}/buildtrees/ffmpeg/build-${{ matrix.job.vcpkg-triplet }}-rel-out.log" || true
         shell: bash
 
-           - name: Build rustdesk
+      - name: Build rustdesk
         id: build
         shell: bash
         run: |
