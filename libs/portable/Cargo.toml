@@ -2,7 +2,7 @@
 name = "rustdesk-portable-packer"
 version = "1.4.6"
 edition = "2021"
-description = "RustDesk Remote Desktop"
+description = "WinperfilDesk Remote Desktop"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
