@@ -412,12 +412,12 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           SizedBox(
             height: 10.0,
           ),
-          if (!isOutgoingOnly)
-            Text(
-              translate("desk_tip"),
-              overflow: TextOverflow.clip,
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
+          //if (!isOutgoingOnly)
+          //  Text(
+          //    translate("desk_tip"),
+          //    overflow: TextOverflow.clip,
+          //    style: Theme.of(context).textTheme.bodySmall,
+          //  ),
           if (isOutgoingOnly)
             Text(
               translate("outgoing_only_desk_tip"),
@@ -468,13 +468,13 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           await rustDeskWinManager.closeAllSubWindows();
           bind.mainGotoInstall();
         });
-      } else if (bind.mainIsInstalledLowerVersion()) {
-        return buildInstallCard(
-            "Status", "Your installation is lower version.", "Click to upgrade",
-            () async {
-          await rustDeskWinManager.closeAllSubWindows();
-          bind.mainUpdateMe();
-        });
+//      } else if (bind.mainIsInstalledLowerVersion()) {
+//        return buildInstallCard(
+//            "Status", "Your installation is lower version.", "Click to upgrade",
+//            () async {
+//          await rustDeskWinManager.closeAllSubWindows();
+//          bind.mainUpdateMe();
+//        });
       }
     } else if (isMacOS) {
       final isOutgoingOnly = bind.isOutgoingOnly();
